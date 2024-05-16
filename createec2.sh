@@ -6,7 +6,7 @@ instance=("mongodb" "web" "catalouge")
 
 for i in "${instance[@]}"
 do
-if [ $instance == "mongodb" ] ||  [ $instance == "web" ]; then
+if [ $i == "mongodb" ] ||  [ $i == "web" ]; then
      INSTANCE_TYPE="t3.small"
 else
      INSTANCE_TYPE="t2.small"
