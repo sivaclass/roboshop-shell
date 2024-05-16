@@ -2,7 +2,7 @@
 AMI="ami-0f3c7d07486cad139"
 Security_group="sg-02215d34f222346fe"
 instance=("mongodb" "web" "user")
-TAG_NAME="Name=$instance[@}]"
+TAG_NAME="Name=$instance[@]"
 for i in "${instance[@]}"
 do
 
