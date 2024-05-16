@@ -1,6 +1,6 @@
 #!bin/bash
 VAR=$(id -u)
-if [$? == 0]; then
+if [$VAR == 0]; then
 yum install ansible -y
 echo "ansible successfully installed"
 else
