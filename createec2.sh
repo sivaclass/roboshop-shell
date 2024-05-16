@@ -6,7 +6,7 @@ instance=("mongodb" "web" "user")
 for i in "${instance[@]}"
 do
 
-aws ec2 run-instances --image-id $AMI --instance-type t2.micro --security-group-ids $Security_group --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=server1},{Key=Environment,Value=roboshell}]'
+aws ec2 run-instances --image-id $AMI --instance-type t2.micro --security-group-ids $Security_group --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=$i},{Key=Environment,Value=roboshell}]'
 echo "lanching the instance $i"
 
 done
