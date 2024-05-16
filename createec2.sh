@@ -7,7 +7,7 @@ for i in "${instance[@]}"
 do
 
 aws ec2 run-instances --image-id $AMI --instance-type t2.micro --security-group-ids $Security_group 
-tags="Key1=$instance[@]"
+--tag-specifications 'ResourceType=instance,Tags="Key1=$instance[@]"'
 echo "lanching the instance $i"
 
 
