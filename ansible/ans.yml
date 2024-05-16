@@ -1,9 +1,12 @@
 - name: installing nginx
   hosts: master
   tasks:
-    - ansible.builtin.package:
+  - name: installing nginx
+    ansible.builtin.package:
       name: nginx
       state: installed
-    - ansible.builtin.service:
+  - name: starting nginx
+    ansible.builtin.service:
       name: nginx
       state: started  
+   
