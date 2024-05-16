@@ -1,4 +1,4 @@
-#!/bin/bash
+#!bin/bash
 VAR=$(id -u)
 if [ $VAR -ne 0 ]
 then
