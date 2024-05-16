@@ -1,8 +1,6 @@
 #!/bin/bash
 AMI="ami-0f3c7d07486cad139"
 Security_group="sg-02215d34f222346fe"
-instance_type1="t2.micro"
-type2="t3.micro"
 
 instance=("mongodb" "web" "catalouge")
 
