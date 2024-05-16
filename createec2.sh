@@ -8,7 +8,7 @@ instance=("mongodb" "web" "catalouge")
 
 for i in "${instance[@]}"
 do
-if [ "$instance" -eq mongodb ] ||  [ "$instance" -eq web ]; then
+if [ "$instance" -eq "mongodb" ] ||  [ "$instance" -eq "web" ]; then
      INSTANCE_TYPE="t3.small"
 else
      INSTANCE_TYPE="t2.small"
